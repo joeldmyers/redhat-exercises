@@ -1,0 +1,83 @@
+body {
+  min-height: 100vh;
+  background: #bbbbbb;
+  background: -moz-linear-gradient(top, #bbbbbb 0%, #ededed 100%);
+  background: -webkit-linear-gradient(top, #bbbbbb 0%, #ededed 100%);
+  background: linear-gradient(to bottom, #bbbbbb 0%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb', endColorstr='#ededed',GradientType=0 );
+  font-family: "Overpass";
+}
+
+#panel {
+  width: 90%;
+  max-width: 550px;
+  margin: 20vh auto;
+  background: #ffffff;
+}
+
+#panel-header {
+  background: #cc0000;
+  background: -moz-linear-gradient(top, #cc0000 0%, #470000 100%);
+  background: -webkit-linear-gradient(top, #cc0000 0%, #470000 100%);
+  background: linear-gradient(to bottom, #cc0000 0%, #470000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#470000',GradientType=0 );
+  color: #fff;
+}
+
+#panel-header span {
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+#panel-header-nav {
+  float: right;
+}
+
+.panel-header-nav-item {
+  float: left;
+  padding: 10px 15px;
+  border-left: 1px solid #fff;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.panel-header-nav-item.active,
+.panel-header-nav-item:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 6px 6px rgb(0, 0, 0, 0.3);
+}
+
+#panel-content {
+  padding: 20px;
+}
+
+.cell-left,
+.cell-right {
+  margin: 8px 0;
+}
+
+.cell-left {
+  width: 150px;
+  float: left;
+}
+
+.cell-left span {
+  font-weight: bold;
+}
+
+.cell-right {
+  width: calc(100% - 150px);
+  display: inline-block;
+}
+
+.status {
+  border-radius: 3px;
+}
+
+.status-active {
+  background: #008100;
+  color: #fff;
+  padding: 3px 10px;
+}
